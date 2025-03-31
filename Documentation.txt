@@ -1,0 +1,81 @@
+Authentification
+Méthodes d'authentification :
+
+Authentification classique : Les utilisateurs peuvent se connecter avec un nom d'utilisateur et un mot de passe.
+
+Authentification par Google : Les utilisateurs peuvent se connecter avec leur compte Google en utilisant OAuth 2.0.
+
+Authentification par reconnaissance faciale : Les utilisateurs peuvent se connecter via la reconnaissance faciale après avoir téléversé une photo de leur visage.
+
+Détails de connexion :
+
+Nom d'utilisateur : ibrahima
+
+Mot de passe : test123
+
+=====================================================================================
+
+Inscription
+Méthodes d'inscription :
+
+Inscription classique : Les utilisateurs peuvent s'inscrire avec un nom d'utilisateur, un mot de passe et un e-mail.
+
+Inscription par Google : Les utilisateurs peuvent s'inscrire via leur compte Google.
+
+Inscription par reconnaissance faciale : Les utilisateurs peuvent s'inscrire en téléversant une photo de leur visage. Cette photo est ensuite utilisée pour l'extraction de caractéristiques faciales.
+
+
+
+=====================================================================================
+
+
+Stockage
+Base de données :
+
+Utilisation de SQLite pour stocker les informations des utilisateurs (nom d'utilisateur, mot de passe, e-mail, photo).
+
+La base de données permet d'optimiser la vitesse et l'accessibilité de l'information.
+
+Stockage de la photo et des caractéristiques :
+
+Les photos des utilisateurs sont enregistrées sous format BLOB dans la base de données.
+
+Une copie des photos est également stockée dans un dossier spécifique pour l'extraction de caractéristiques.
+
+Les caractéristiques extraites des photos sont enregistrées sous format .npy dans un fichier signature.
+
+
+=====================================================================================
+
+
+Fonctionnalités à venir
+Reconnaissance faciale :
+
+Prochainement, une méthode pour reconstruire un dossier d'images à partir des caractéristiques extraites sera implémentée.
+
+Sécurisation des données :
+
+Des améliorations seront apportées à la sécurité, notamment au niveau du chiffrement des données sensibles (mot de passe).
+
+
+=====================================================================================
+
+
+Technologies utilisées
+Streamlit : Pour la création de l'interface utilisateur web.
+
+Google OAuth 2.0 : Pour l'authentification avec Google.
+
+SQLite : Pour le stockage des données utilisateurs.
+
+Reconnaissance faciale : Pour l'authentification par reconnaissance faciale.
+
+NumPy : Pour l'enregistrement des caractéristiques sous format .npy
+
+=====================================================================================
+
+Remarques:
+
+Si vous vous inscriver avec google vous allez devoir dabord fermer streamlit avant de continuer en allant dans le Gestionnaires des taches puis 'fin de taches' pour streamlit
+
+
